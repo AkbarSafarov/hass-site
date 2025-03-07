@@ -74,6 +74,66 @@ $(function(){
         $(this).addClass("active");
         $(`.materials_block_wr .slider_text[data-slid-index="${index}"]`).addClass("active");
     });
+
+
+    const menu = ['2001', '2005', '2009', '2013', '2020',  '2021']
+
+    const historySwiper = new Swiper('.slider-wrap_history', {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        lazy: true,
+        effect: "fade",
+        navigation: {
+            nextEl: ".arrow_history.next",
+            prevEl: ".arrow_history.prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (menu[index]) + '</span>';
+            },
+        },
+    });
+
+    const teamImgSwiper = new Swiper('.slider-team_img', {
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 15,
+        lazy: true,
+        navigation: {
+            nextEl: ".arrow_team.next",
+            prevEl: ".arrow_team.prev",
+        },
+        on: {
+            slideChange: function () {
+                const activeIndex = this.realIndex; // Получаем текущий индекс слайда
+
+                // Удаляем класс active у всех .team_text .item
+                document.querySelectorAll('.team_text .item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Добавляем класс active элементу с соответствующим data-slid-index
+                const activeTextItem = document.querySelector(`.team_text .item[data-slid-index="${activeIndex}"]`);
+                if (activeTextItem) {
+                    activeTextItem.classList.add('active');
+                }
+            }
+        },
+        breakpoints: {
+            0: {
+                spaceBetween: 0,
+            },
+            768: {
+                spaceBetween: 15,
+            }
+        },
+    });
+
+
 	
 	var $body = $(document.body),
       	$html = $(document.documentElement);
