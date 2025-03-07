@@ -1268,6 +1268,7 @@ img, textarea, input, table {
         width: 100%;
         object-fit: cover;
         min-height: 100vh;
+        height: 100%;
     }
 
     .block_inner {
@@ -1325,5 +1326,177 @@ img, textarea, input, table {
 }
 
 .about_block_wr {
-    
+    padding: 160px 28px 120px;
+
+    @media all and (max-width: 1200px){
+        padding: 80px 28px;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 109%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+        padding-bottom: 80px;
+        max-width: 698px;
+        margin: 0 auto;
+
+        @media all and (max-width: 1200px) {
+            font-size: 25px;
+            text-align: left;
+            margin: 0;
+            padding-bottom: 16px;
+        }
+    }
+
+    .inner {
+        display: flex;
+        gap:100px;
+
+        .item_text_wr {
+            display: none;
+
+            .item_text {
+                margin-bottom: 40px;
+                padding-bottom: 40px;
+                border-bottom: 1px solid #ececec;
+
+                .name {
+                    padding-bottom: 16px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 120%;
+                    text-transform: uppercase;
+                    color: #000;
+                }
+
+                .text {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 160%;
+                    color: #000;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border: none;
+                }
+            }
+        }
+
+        .left {
+            flex: 0 0 50%;
+
+            .item_text_wr {
+                @media all and (min-width: 768px) {
+                    display: block;
+                    padding-top: 88px;
+                }
+            }
+        }
+
+        .blockquote {
+            margin-bottom: 271px;
+
+            blockquote {
+                padding: 46px 0 0;
+                margin: 0 0 32px;
+                position: relative;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 120%;
+                color: #000;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 28px;
+                    height: 22px;
+                    background: url("data:image/svg+xml,%3Csvg width='28' height='22' viewBox='0 0 28 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.9048 22V10.6508L28 0H23.9841L16.6508 13.4444V22H25.9048ZM9.25397 22V10.6508L11.3492 0H7.33333L0 13.4444V22H9.25397Z' fill='%23CAB890' /%3E%3C/svg%3E") 50% no-repeat;
+                }
+            }
+
+            .name {
+                padding-bottom: 6px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                text-transform: uppercase;
+                color: #000;
+            }
+
+            .job {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 160%;
+                color: #000;
+            }
+        }
+
+        .image {
+            font-size: 0;
+        }
+
+        .right {
+            flex: 0 0 calc(50% - 100px);
+            padding-top: 140px;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1200px) {
+            gap: 50px;
+
+            .right {
+                flex: 0 0 calc(50% - 50px);
+                padding-top: 60px;
+
+            }
+
+            .blockquote {
+                margin-bottom: 100px;
+            }
+        }
+
+        @media all and (max-width: 767px) {
+            display: block;
+
+            img {
+                width: 100%;
+            }
+
+            .right {
+                padding-top: 32px;
+                margin-bottom: 48px;
+            }
+
+            .blockquote {
+                margin-bottom: 48px;
+            }
+
+            .item_text_wr {
+                display: block;
+
+                .item_text {
+                    margin-bottom: 24px;
+                    padding-bottom: 24px;
+
+                    .name {
+                        font-size: 16px;
+                        padding-bottom: 12px;
+                    }
+                }
+            }
+
+            .left {
+
+                .item_text_wr {
+                    display: none;
+                }
+            }
+        }
+    }
 }
