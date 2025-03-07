@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайтл</title>
+    
+
+    <link rel="stylesheet" href="css/template_ef10d3ec78e18b8ba55ed33acddcea8e_v1.css">
+    <link rel="stylesheet" href="css/rs.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__left">
+                <div class="header__catalog">
+                    <div class="header__catalog-icon">
+                        <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 0.5H22" stroke="black" stroke-linecap="square"></path>
+                            <path d="M1 14.5H22" stroke="black" stroke-linecap="square"></path>
+                            <path d="M1 7.5H22" stroke="black" stroke-linecap="square"></path>
+                        </svg>
+                    </div>
+                    <!-- ./header__catalog-icon -->
+                    <p class="header__catalog-text">каталог</p>
+                </div>
+                <!-- ./header__catalog -->
+                <a href="/catalog/novinki-odezhdy/" class="header__link redfont">НОВИНКИ</a>
+                <a href="https://hassfashion.ru/" target="_blank" class="header__link">опт</a>
+                <a href="/catalog/sale/" class="header__link">скидки</a>
+                <a href="/customers/loyalty/" target="_blank" class="header__link">программа лояльности</a>
+                <div id="search-button" class="header__search">
+                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7941 8.75C16.7941 13.3119 13.141 17 8.64706 17C4.15312 17 0.5 13.3119 0.5 8.75C0.5 4.18806 4.15312 0.5 8.64706 0.5C13.141 0.5 16.7941 4.18806 16.7941 8.75Z" stroke="black"></path>
+                        <path d="M14.8236 15L20.3824 19.375" stroke="black" stroke-linecap="square"></path>
+                    </svg>
+                </div>
+                <div class="search-wrapper" style="display: none;">
+                    <div id="title-search">
+                        <form action="/search/">
+                            <input id="title-search-input" class="popup-menu__search-input" type="text" name="q" value="" maxlength="50" autocomplete="off" placeholder="найти на сайте">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <a class="header__search-mobile" href="/search/">
+                <div class="header__search ">
+                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7941 8.75C16.7941 13.3119 13.141 17 8.64706 17C4.15312 17 0.5 13.3119 0.5 8.75C0.5 4.18806 4.15312 0.5 8.64706 0.5C13.141 0.5 16.7941 4.18806 16.7941 8.75Z" stroke="black"></path>
+                        <path d="M14.8236 15L20.3824 19.375" stroke="black" stroke-linecap="square"></path>
+                    </svg>
+                </div>
+            </a>
+            <!-- /.header__left -->
+            <a href="/" class="header__logo-wrapper">
+                <img src="files/hasslogo1.svg" alt="Интернет магазин женской одежды HASS" title="Интернет магазин женской одежды HASS" class="header__logo" style="width: 130px">
+            </a>
+            <!-- /.header__logo -->
+            <a class="header__cart-wrapper adaptive" href="/personal/cart/" style="margin: -2px 20px 0 0">
+                <div class="header__icon header__icon_cart"></div>
+                <!--	<div class="count_item" id="count_item"></div> -->
+                <div>
+                    <!--'start_frame_cache_bx_basketFKauiI'-->
+                    <div class="bx-basket-block bx-basket-block_number">0</div>
+                    <!--'end_frame_cache_bx_basketFKauiI'-->
+                </div>
+            </a>
+            <div class="header__phone__mobile header__right__mobile">
+                <!--<a href="tel:89651619480">
+                    <img width="22px" src="">
+                </a>-->
+            </div>
+            <div class="header__phone header__right">
+                <!--<div class="callback_btn_top"><a href="#callback" data-fancybox="" class="callback_btn">Заказать звонок</a></div>-->
+                <div class="callback_btn_top"><a href="https://api.whatsapp.com/send/?phone=79651619480&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blanc" class="wp_btn">написать в WhatsApp</a></div>
+                <div class="comagic_phone">
+                    <!-- <a href="tel:89651619480" class="header__phone">-->
+                    <!--</a>-->
+                    <span class="header_phone_label">пн-чт 9:00-18:00 <br> пт 9:00-17:00</span>
+                </div>
+                <a href="/about/shops/">
+                    <div class="header__icon header__icon_map"></div>
+                </a>
+                <a class="header__cart-wrapper" href="/personal/wishlist/">
+                    <div class="header__icon header__icon_like"></div>
+                    <div class="bx-favorite-block bx-basket-block">0</div>
+                </a>
+                <a href="/auth/registration.php">
+                    <div class="header__icon header__icon_login"></div>
+                </a>
+                <a class="header__cart-wrapper" href="/personal/cart/">
+                    <div class="header__icon header__icon_cart"></div>
+                    <!--	<div class="count_item" id="count_item"></div> -->
+                    <div>
+                        <!--'start_frame_cache_bx_basketT0kNhm'-->
+                        <div class="bx-basket-block bx-basket-block_number">0</div>
+                        <!--'end_frame_cache_bx_basketT0kNhm'-->
+                    </div>
+                </a>
+            </div>
+            <!-- /.header__right -->
+        </div>
+        <!-- /.header__inner -->
+    </header>
+    <div class="site_wrapper">
